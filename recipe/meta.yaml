@@ -23,6 +23,7 @@ requirements:
 test:
   commands:
     - hugo help
+    - hugo version
 
 about:
   home: https://gohugo.io/
