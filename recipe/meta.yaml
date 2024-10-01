@@ -10,7 +10,7 @@ source:
   sha256: a75c4c684d2125255f214d11b9834a5ec6eb64353f4de2c06952d2b3b7430f0e
 
 build:
-  number: 0
+  number: 1
   binary_relocation: false
 
 requirements:
@@ -23,6 +23,7 @@ requirements:
 test:
   commands:
     - hugo help
+    - hugo version
 
 about:
   home: https://gohugo.io/
