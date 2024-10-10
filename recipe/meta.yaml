@@ -10,12 +10,13 @@ source:
   sha256: a75c4c684d2125255f214d11b9834a5ec6eb64353f4de2c06952d2b3b7430f0e
 
 build:
-  number: 2
+  number: 3
   binary_relocation: false
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
     - {{ compiler('go-cgo') }} >=1.20
     - go-licenses
@@ -37,3 +38,4 @@ about:
 extra:
   recipe-maintainers:
     - moritzwilksch
+    - dbast
