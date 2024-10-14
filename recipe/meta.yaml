@@ -29,7 +29,7 @@ test:
 about:
   home: https://gohugo.io/
   dev_url: https://github.com/gohugoio/hugo
-  summary: The world's fastest framework for building websites.
+  summary: The extended version of the Hugo static site generator – the world's fastest framework for building websites.
   license: Apache-2.0
   license_file:
     - LICENSE
@@ -39,3 +39,4 @@ extra:
   recipe-maintainers:
     - moritzwilksch
     - dbast
+    - agriyakhetarpal
