@@ -7,7 +7,7 @@ Home: https://gohugo.io/
 
 Package license: Apache-2.0
 
-Summary: The world's fastest framework for building websites.
+Summary: The extended version of the Hugo static site generator – the world's fastest framework for building websites.
 
 Development: https://github.com/gohugoio/hugo
 
