@@ -12,12 +12,13 @@ source:
 build:
   number: 5
   binary_relocation: false
-  # Hugo binaries are statically linked on Windows, so this silences some warnings
-  # from conda-forge about already exported DSOs.
-  ignore_run_exports: # [win]
-    - libstd++ # [win]
-    - libwinpthread # [win]
-    - libgcc # [win]
+  # Hugo binaries are statically linked on Windows, so the
+  # following silences some warnings from conda-forge about
+  # already exported DSOs.
+  ignore_run_exports:
+    - libstd++  # [win]
+    - libwinpthread  # [win]
+    - libgcc  # [win]
 
 
 requirements:
