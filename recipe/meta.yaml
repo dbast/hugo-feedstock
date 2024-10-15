@@ -10,8 +10,15 @@ source:
   sha256: a75c4c684d2125255f214d11b9834a5ec6eb64353f4de2c06952d2b3b7430f0e
 
 build:
-  number: 4
+  number: 5
   binary_relocation: false
+  # Hugo binaries are statically linked on Windows, so the
+  # following silences some warnings from conda-forge about
+  # already exported DSOs.
+  ignore_run_exports:
+    - libstdcxx  # [win]
+    - libwinpthread  # [win]
+    - libgcc  # [win]
 
 requirements:
   build:
@@ -29,7 +36,7 @@ test:
 about:
   home: https://gohugo.io/
   dev_url: https://github.com/gohugoio/hugo
-  summary: The world's fastest framework for building websites.
+  summary: The extended version of the Hugo static site generator – the world's fastest framework for building websites.
   license: Apache-2.0
   license_file:
     - LICENSE
@@ -39,3 +46,4 @@ extra:
   recipe-maintainers:
     - moritzwilksch
     - dbast
+    - agriyakhetarpal

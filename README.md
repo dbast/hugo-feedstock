@@ -7,7 +7,7 @@ Home: https://gohugo.io/
 
 Package license: Apache-2.0
 
-Summary: The world's fastest framework for building websites.
+Summary: The extended version of the Hugo static site generator – the world's fastest framework for building websites.
 
 Development: https://github.com/gohugoio/hugo
 
@@ -15,14 +15,7 @@ Current build status
 ====================
 
 
-<table><tr>
-    <td>Travis</td>
-    <td>
-      <a href="https://app.travis-ci.com/conda-forge/hugo-feedstock">
-        <img alt="linux" src="https://img.shields.io/travis/com/conda-forge/hugo-feedstock/main.svg?label=Linux">
-      </a>
-    </td>
-  </tr>
+<table>
     
   <tr>
     <td>Azure</td>
@@ -206,6 +199,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@agriyakhetarpal](https://github.com/agriyakhetarpal/)
 * [@dbast](https://github.com/dbast/)
 * [@moritzwilksch](https://github.com/moritzwilksch/)
 
