@@ -20,7 +20,6 @@ build:
     - libwinpthread  # [win]
     - libgcc  # [win]
 
-
 requirements:
   build:
     - {{ compiler('c') }}
