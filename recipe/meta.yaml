@@ -16,7 +16,7 @@ build:
   # following silences some warnings from conda-forge about
   # already exported DSOs.
   ignore_run_exports:
-    - libstd++  # [win]
+    - libstdcxx  # [win]
     - libwinpthread  # [win]
     - libgcc  # [win]
 
