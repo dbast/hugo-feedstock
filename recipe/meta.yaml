@@ -33,6 +33,7 @@ test:
     - hugo help
     - hugo version
 
+
 about:
   home: https://gohugo.io/
   dev_url: https://github.com/gohugoio/hugo
