@@ -1,5 +1,5 @@
 {% set name = "hugo" %}
-{% set version = "0.135.0" %}
+{% set version = "0.136.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/gohugoio/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: a75c4c684d2125255f214d11b9834a5ec6eb64353f4de2c06952d2b3b7430f0e
+  sha256: 0c488f10b53d20930e2132089caa3727283bf3c2b07a2d3211e94fe553168339
 
 build:
-  number: 5
+  number: 0
   binary_relocation: false
   # Hugo binaries are statically linked on Windows, so the
   # following silences some warnings from conda-forge about
