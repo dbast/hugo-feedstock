@@ -10,7 +10,7 @@ source:
   sha256: 0c488f10b53d20930e2132089caa3727283bf3c2b07a2d3211e94fe553168339
 
 build:
-  number: 0
+  number: 1
   binary_relocation: false
   # Hugo binaries are statically linked on Windows, so the
   # following silences some warnings from conda-forge about
