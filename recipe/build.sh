@@ -8,6 +8,8 @@ export CGO_ENABLED=1
 if [ "$(uname -m)" = "ppc64le" ]; then
     export CFLAGS="$CFLAGS -mcmodel=large"
     export LDFLAGS="$LDFLAGS -mcmodel=large"
+    export CGO_CFLAGS="-mcmodel=large"
+    export CGO_LDFLAGS="-mcmodel=large"
 fi
 
 env | sort
