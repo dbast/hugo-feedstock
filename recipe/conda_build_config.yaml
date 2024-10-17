@@ -6,9 +6,11 @@ c_stdlib_version:
 - '12'                     # [win]
 c_compiler:                # [win]
 - gcc                      # [win]
-c_compiler_version:        # [win]
+c_compiler_version:
+- 12                       # [ppc64le]
 - 13                       # [win]
 cxx_compiler:              # [win]
 - gxx                      # [win]
-cxx_compiler_version:      # [win]
+cxx_compiler_version:
+- 12                       # [ppc64le]
 - 13                       # [win]
