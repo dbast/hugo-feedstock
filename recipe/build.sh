@@ -6,8 +6,10 @@ export GO111MODULE=on
 export CGO_ENABLED=1
 
 if [ "$(uname -m)" = "ppc64le" ]; then
-    export CFLAGS="$CFLAGS -mcmodel=medium"
-    export LDFLAGS="$LDFLAGS -mcmodel=medium"
+    export CFLAGS="$CFLAGS -mcmodel=medium -flto"
+    export LDFLAGS="$LDFLAGS -mcmodel=medium -flto"
+    export CXXFLAGS="$CXXFLAGS -mcmodel=medium -flto"
+    # -fno-lto -flto -fno-tree-vectorize
     # export CGO_CFLAGS="-mcmodel=large"
     # export CGO_LDFLAGS="-mcmodel=large"
 fi
