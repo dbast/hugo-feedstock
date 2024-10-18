@@ -6,9 +6,8 @@ export GO111MODULE=on
 export CGO_ENABLED=1
 
 if [ "$(uname -m)" = "ppc64le" ]; then
-    export CFLAGS="$CFLAGS -ffunction-sections -fdata-sections --gc-sections -mcmodel=medium -fno-lto"
-    export LDFLAGS="$LDFLAGS -ffunction-sections -fdata-sections --gc-sections -mcmodel=medium -fno-lto"
-    export CXXFLAGS="$CXXFLAGS -ffunction-sections -fdata-sections --gc-sections -mcmodel=medium -fno-lto"
+    export CFLAGS="${CFLAGS//-O3/-O2}"
+    export CXXFLAGS="${CXXFLAGS//-O3/-O2}"
     # -fno-lto -flto -fno-tree-vectorize
     # export CGO_CFLAGS="-mcmodel=large"
     # export CGO_LDFLAGS="-mcmodel=large"
