@@ -5,14 +5,14 @@ set -ex
 export GO111MODULE=on
 export CGO_ENABLED=1
 
-if [ "$(uname -m)" = "ppc64le" ]; then
-    export CFLAGS="$CFLAGS -flto"
-    export LDFLAGS="$LDFLAGS -flto"
-    export CXXFLAGS="$CXXFLAGS -flto"
+#if [ "$(uname -m)" = "ppc64le" ]; then
+    # export CFLAGS="$CFLAGS -flto"
+    # export LDFLAGS="$LDFLAGS -flto"
+    # export CXXFLAGS="$CXXFLAGS -flto"
     # -fno-lto -flto -fno-tree-vectorize
     # export CGO_CFLAGS="-mcmodel=large"
     # export CGO_LDFLAGS="-mcmodel=large"
-fi
+#fi
 
 env | sort
 
