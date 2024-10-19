@@ -9,8 +9,8 @@ if [ "$(uname -m)" = "ppc64le" ]; then
     #export CFLAGS="${CFLAGS//-O3/-O2}"
     #export CXXFLAGS="${CXXFLAGS//-O3/-O2}"
     # -fno-lto -flto -fno-tree-vectorize
-    export CGO_CFLAGS="-mcmodel=medium -flto"
-    export CGO_LDFLAGS="-mcmodel=medium -flto"
+    export CGO_CFLAGS="$CFLAGS"
+    export CGO_LDFLAGS="$LDFLAGS"
 fi
 
 env | sort
