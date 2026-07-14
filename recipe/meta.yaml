@@ -22,10 +22,13 @@ build:
 
 requirements:
   build:
-    - {{ compiler('c') }}
-    - {{ compiler('cxx') }}
-    - {{ stdlib("c") }}
-    - {{ compiler('go-cgo') }} >=1.26
+    - {{ compiler('c') }}                    # [not (win and arm64)]
+    - {{ compiler('cxx') }}                  # [not (win and arm64)]
+    - {{ stdlib("c") }}                      # [not (win and arm64)]
+    - {{ compiler('go-cgo') }} >=1.26        # [not (win and arm64)]
+    # No gcc/go-cgo cross-compiler ships for win-arm64 in conda-forge, so we
+    # build a plain (non-extended, cgo-disabled) binary there instead; see bld.bat.
+    - go >=1.26                              # [win and arm64]
     - go-licenses
 
 test:
